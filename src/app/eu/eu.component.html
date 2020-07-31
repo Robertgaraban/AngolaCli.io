@@ -1,0 +1,67 @@
+<section>
+
+    <div>
+
+        <h1>Robert Garaban Garcias</h1>
+
+        
+        <img id="imgtela" src="/assets/imagem/ROBERTGARABAN.jpg" >
+    
+        <h3> Visita nosso projeto {{ url }} </h3><br>
+
+        <label width="200px">Atividade</label><br>
+        
+        <input [value]="nome_curso"><br>
+        
+        <h3>Imagenes com Interpolação</h3><br>
+
+        <img id="imgurl" src="{{urlimagem}}">
+
+        <img id="imgurl" [src]="urlimagem1"><br>
+        
+        <Article>
+
+            <h3> Nossa Vida</h3>
+
+            <p>   Seleciona o cor dos paragafos </p> 
+
+            <select #cor (change)="0">
+                <option value="vermelho"> Vermelho </option>
+                <option value="azul"> Azul </option>
+                <option value="verde"> Verde </option>
+            </select>
+            <br>
+            <br>
+
+            <p [class]="cor.value"> cor selecionado por voce foi a: <strong>{{cor.value}} </strong></p>
+            
+            <p [class]="cor.value">
+                ou muito ordenado, lutador, ordenado, trabalhador e gosto muito do trabalho em <br>
+			    projetos difícil e melhor pra mim.<br>
+			  
+			    As coisas mias importantes sobre mim sou:<br>
+			  
+				1)	Sou pai de 2 filhos, Sindoa Anthonella (10 anos) e Robert Fabricio (4 anos).<br>
+				2)	Esposo de Erika Espina.<br>
+				3)	Filo de Robert José y Carmen Garcías.<br>
+
+            </p>
+            <br>
+
+            <img id="imglazer" src="/assets/imagem/20190414_110016.jpg" >
+
+            <br>
+
+            <img id="imglazer" src="/assets/imagem/20190414_110316.jpg" >
+
+
+
+           
+        </Article>
+
+
+        
+    </div>
+
+</section>
+

@@ -1,0 +1,46 @@
+#foto1{
+    width: 400px;
+    height: 400%;
+    z-index: 1;
+
+}
+
+.img{
+    margin-right: 10px;
+    width: 400px;
+    width: 400px;
+}
+
+.verde{
+    color: green;
+}
+
+.vermelho{
+    color: red;
+}
+
+.azul{
+    color: blue;
+}
+
+#imgtela{
+    width: 90px;
+    width: 90px;
+    border-radius: 10px;
+    
+}
+
+#imglazer{
+    width: 200px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+#imgurl{
+    width: 200px;
+    width: 100%;
+    border-radius: 40px;
+    padding: 20px;
+
+}
