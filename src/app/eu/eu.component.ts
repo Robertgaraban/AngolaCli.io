@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-eu',
   templateUrl: './eu.component.html',
-  styleUrls: ['./eu.component.css']
+  styleUrls: ['./eu.component.css'],
+
 })
 export class EuComponent implements OnInit {
 
@@ -15,24 +16,25 @@ export class EuComponent implements OnInit {
 
   nome_curso: string = "Nosso Curso de Angola CLI - Exercicio 01";
 
+  campo_texto: string = " "
+
+  valor_salvo: string = " "
+
+  taskLisk: string = " "
+
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  addNewTask() {
-    let input = document.querySelector("#newTask");
-    let taskLisk = document.querySelector("#taskLisk")
+  onKeyUp(valor) {
+    this.campo_texto = valor;
+}
 
-    let newTask = input.value;
-        //console.log(newTask)
+  salvarValor(valor){
+    this.valor_salvo = valor;
     
-
-    let listItem = document.createElement("li");
-    
-    listItem.textContent = newTask;
-
-    taskLisk.appendChild(listItem);   
   }
 
 }

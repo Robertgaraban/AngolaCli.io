@@ -65,34 +65,36 @@
 
 </section>
 
-<section>
 
-    <article>
 
-        <p>
+<article>
 
-            Valos escoler um tipo de comida para nossa refleção de hoje:
+    <p>
 
-        </p>
+        Vamos escoler um tipo de comida para nossa refleção de hoje:
 
-        <div>
+    </p>
 
-            <form>
 
-                <label>
-                    Tarefas
-                    <input id="newTask" type="text"> <br>
-                </label><br>
-                <button type="button" onclick="addNewTask()">Adicionar</button><br>
+    <input 
+        #meuCampo type="text" 
+        placeholder="Digita a Comida" 
+        (keyup)="onKeyUp(meuCampo.value)"
+        (keyup.enter)="salvarValor(meuCampo.value)">
+    
+    <br>
+
+    <button> Agragar Comida a Minha Listagem</button><br>
+
+    <p>mea comida: {{campo_texto}} </p>
+    <p>comida agregada: {{valor_salvo}} </p>
+
+    <ul id="taskLisk">
+
+
+    </ul>
             
-            </form>
-
-            <ul id="taskLisk">
-
-        </div>
+</article>
 
 
-    </article>
-
-</section>
 
