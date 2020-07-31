@@ -20,4 +20,19 @@ export class EuComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNewTask() {
+    let input = document.querySelector("#newTask");
+    let taskLisk = document.querySelector("#taskLisk")
+
+    let newTask = input.value;
+        //console.log(newTask)
+    
+
+    let listItem = document.createElement("li");
+    
+    listItem.textContent = newTask;
+
+    taskLisk.appendChild(listItem);   
+  }
+
 }
